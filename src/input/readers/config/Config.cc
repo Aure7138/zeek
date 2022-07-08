@@ -184,7 +184,7 @@ bool Config::DoUpdate()
 	std::regex re;
 	try
 		{
-		re.assign("^([^[:blank:]]+)[[:blank:]]+([^[:blank:]](.*[^[:blank:]])?)?[[:blank:]]*$",
+		re.assign("^([^[:blank:]]+)[[:blank:]]+([^[:blank:]](.*[^[:blank:],])?)?[[:blank:],]*$",
 		          std::regex::extended);
 		}
 	catch ( const std::regex_error& e )
